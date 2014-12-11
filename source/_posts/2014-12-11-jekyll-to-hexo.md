@@ -23,3 +23,5 @@ tags: [hexo, jekyll]
     hexo d == hexo deploy
     hexo s == hexo server
     hexo n == hexo new
+
+5. 每次deploy都需要重复输入密码的问题，可以按照这篇文章来设置ssh key，[使用hexo搭建blog之五：部署hexo到github](http://www.studio2013.com/2013/07/21/hexo-github-deploy/)
