@@ -86,4 +86,5 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: https://github.com/weijinshi/weijinshi.github.com.git
+  repo: git@github.com:weijinshi/weijinshi.github.com.git
+  branch: master
