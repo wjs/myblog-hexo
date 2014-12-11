@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <%- css('css/style') %>
+</head>
+<body>
+<% page.posts.sort("date", "desc").each(function(post){ %>
+<%- partial('_partial/post_entry', {post: post}) %>
+<% }) %>
+<% if (page.total > 1){ %>
+<nav id="page-nav">
+    <%- paginator({
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;'
+    }) %>
+</nav>
+<% } %>
+
+<script src="/js/script.js"></script>
+</body>
