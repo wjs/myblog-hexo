@@ -1,0 +1,46 @@
+.nav-left
+  position fixed
+  top 0
+  left 0
+  width w-nav-left
+  height 100%
+  background-color color-theme
+  box-shadow 2px 4px 5px rgba(3,3,3,0.2)
+  z-index 100
+  a
+    display block
+    width w-avatar-m
+    height w-avatar-m
+    margin ((w-nav-left - w-avatar-m) / 2)
+    text-decoration none
+    text-align center
+    img.avatar
+      width w-avatar-m
+      height w-avatar-m
+      border-radius 50%
+  li
+    height w-nav-left-item
+    margin-bottom 2px
+    a
+      width w-nav-left
+      height 20px
+      margin 0 0
+      padding 10px 0
+      color color-font-nav
+    a:hover, a.active
+      background-color color-bg
+      color color-font
+
+
+// nav-left-sub 
+.nav-left-sub
+  position fixed
+  top 0
+  left w-nav-left
+  width w-nav-left-sub
+  height 100%
+  box-shadow 2px 4px 5px rgba(3,3,3,0.2)
+  background-color #aaa
+  overflow-y: auto
+  z-index 90
+  

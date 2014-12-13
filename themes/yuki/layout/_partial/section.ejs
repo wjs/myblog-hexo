@@ -1,0 +1,9 @@
+<section class="post">
+  <% if (item.link) { %>
+  <a href="<%- item.link %>" title="<%- item.title %>">
+  <% } else { %>
+  <a href="<%- config.root %><%- item.path %>" title="<%- item.title %>">
+  <% } %>
+    <%- item.title %>
+  </a>
+</section>

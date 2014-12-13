@@ -6,6 +6,10 @@
     <%- css('css/style') %>
 </head>
 <body>
+<%- partial('_partial/nav-left') %>
+<%- partial('_partial/main') %>
+
+<!--
 <% page.posts.sort("date", "desc").each(function(post){ %>
 <%- partial('_partial/post_entry', {post: post}) %>
 <% }) %>
@@ -17,6 +21,8 @@
     }) %>
 </nav>
 <% } %>
+
+-->
 
 <script src="/js/script.js"></script>
 </body>

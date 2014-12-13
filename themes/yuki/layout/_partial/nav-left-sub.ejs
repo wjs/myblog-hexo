@@ -1,0 +1,13 @@
+<div class="nav-left-sub" id="left_nav_sub">
+  <% page.posts.sort("date", "desc").each(function(post){ %>
+  <%- partial('_partial/post_entry', {post: post}) %>
+  <% }) %>
+  <% if (page.total > 1){ %>
+  <nav id="page-nav">
+      <%- paginator({
+          prev_text: '&laquo; Prev',
+          next_text: 'Next &raquo;'
+      }) %>
+  </nav>
+  <% } %>
+</div>
